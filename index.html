@@ -32,10 +32,11 @@
       text-decoration: none;
       font-weight: 500;
     }
-    nav a:hover { text-decoration: underline; }
-
+    nav a:hover {
+      text-decoration: underline;
+    }
     .hero {
-      background: url('images/living room.jpg') center/cover no-repeat;
+      background: url('images/living-room.jpg') center/cover no-repeat;
       height: 75vh;
       display: flex;
       justify-content: center;
@@ -47,8 +48,10 @@
     .hero::after {
       content: "";
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: rgba(0,0,0,0.5);
       border-bottom-left-radius: 40px;
       border-bottom-right-radius: 40px;
@@ -81,7 +84,6 @@
       box-shadow: 0 6px 14px rgba(0,0,0,0.25);
       transform: translateY(-3px);
     }
-
     .features {
       max-width: 1000px;
       margin: 60px auto;
@@ -107,8 +109,9 @@
     .card:hover {
       transform: translateY(-5px);
     }
-    .card h3 { color: #1e3a8a; }
-
+    .card h3 {
+      color: #1e3a8a;
+    }
     footer {
       background: #0f2160;
       color: white;
@@ -116,7 +119,10 @@
       padding: 25px 15px;
       margin-top: 50px;
     }
-    footer p { margin: 0; font-size: 0.9rem; }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -139,19 +145,32 @@
   </section>
 
   <section class="features">
-    <h2>Why Rentle?</h2>
+    <h2>Featured Locations</h2>
     <div class="cards">
       <div class="card">
-        <h3>🏡 Verified Listings</h3>
-        <p>All apartments are verified and checked for quality and safety before listing.</p>
+        <h3>308 Hooper St, Brooklyn, NY</h3>
+        <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+        <a href="location-ny-hooper.html" class="btn">View Details</a>
       </div>
       <div class="card">
-        <h3>💳 Easy Booking</h3>
-        <p>Secure your viewing with a simple $50 booking fee online.</p>
+        <h3>414 Lenox Ave, New York, NY</h3>
+        <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+        <a href="location-ny-lenox.html" class="btn">View Details</a>
       </div>
       <div class="card">
-        <h3>🌍 Multiple Cities</h3>
-        <p>We offer apartments across various locations so you can find your perfect match.</p>
+        <h3>649 E Industrial Park Dr, Manchester, NH</h3>
+        <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+        <a href="location-nh-industrial.html" class="btn">View Details</a>
+      </div>
+      <div class="card">
+        <h3>74 S Main St, Rochester, NH</h3>
+        <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+        <a href="location-nh-main.html" class="btn">View Details</a>
+      </div>
+      <div class="card">
+        <h3>631 Glenview Ave, Fort Pierce, FL</h3>
+        <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+        <a href="location-fl-glenview.html" class="btn">View Details</a>
       </div>
     </div>
   </section>
