@@ -1,87 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Available Locations - Rentle Apartments</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-      background: #f3f4f6;
-      margin: 0;
-      padding: 0;
-      color: #374151;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #1e3a8a, #0f2160);
-      color: white;
-      text-align: center;
-      padding: 25px 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    nav { margin-top: 12px; }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-    }
-    h2 { color: #1e3a8a; }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #f9fafb;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    li a {
-      color: #1e3a8a;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    li a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rentle Apartments - Locations</title>
+<style>
+  body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; margin:0; background:#f3f4f6; color:#374151; }
+  header { background: linear-gradient(135deg,#1e3a8a,#0f2160); color:white; padding:20px; text-align:center; }
+  .container { max-width:1000px; margin:40px auto; padding:20px; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+  .card { background:white; padding:25px; border-radius:14px; box-shadow:0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s; }
+  .card:hover { transform: translateY(-5px); }
+  .card h3 { color:#1e3a8a; }
+  .btn { display:inline-block; background:#22c55e; color:white; padding:12px 24px; border-radius:10px; text-decoration:none; font-weight:bold; transition:all 0.3s; }
+  .btn:hover { background:#16a34a; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>🏘️ Rentle Apartments</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="locations.html">Locations</a>
-      <a href="payment.html">Booking Fee</a>
-      <a href="upload.html">Upload Receipt</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h2>Available Apartments</h2>
-    <ul>
-      <li>
-        <a href="new-york-apartment.html">2 Bedroom Apartment – 308 Hooper St, New York, NY 11211</a>
-      </li>
-      <!-- Future apartments can be added here -->
-    </ul>
+<header>
+  <h1>🏘️ Rentle Apartments - Locations</h1>
+</header>
+<div class="container">
+  <div class="cards">
+    <div class="card">
+      <h3>308 Hooper St, New York</h3>
+      <p>2-bedroom apartment, near bus stops and schools.</p>
+      <a href="location-ny-hooper.html" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h3>414 Lenox Ave, New York</h3>
+      <p>2-bedroom apartment, near shopping and transit.</p>
+      <a href="location-ny-lenox.html" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h3>649 E Industrial Park Dr, Manchester</h3>
+      <p>2-bedroom apartment with parking near bus and school.</p>
+      <a href="manchester-apartment.html" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h3>74 S Main St, Rochester</h3>
+      <p>2-bedroom apartment with parking near bus and school.</p>
+      <a href="rochester-apartment.html" class="btn">View Details</a>
+    </div>
+    <div class="card">
+      <h3>631 Glenview Ave, Fort Pierce</h3>
+      <p>2-bedroom apartment with parking near bus and school.</p>
+      <a href="fort-pierce-apartment.html" class="btn">View Details</a>
+    </div>
   </div>
+</div>
 </body>
 </html>
