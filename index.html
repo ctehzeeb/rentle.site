@@ -3,104 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2 Bedroom Apartment – New York</title>
+  <title>Rentle Apartments - Find Your Next Home</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', Roboto, Arial, sans-serif;
       background: #f3f4f6;
-      margin: 0;
-      padding: 0;
       color: #374151;
-      line-height: 1.6;
     }
     header {
       background: linear-gradient(135deg, #1e3a8a, #0f2160);
       color: white;
-      text-align: center;
-      padding: 30px 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
-    }
-    nav {
-      margin-top: 15px;
+      font-size: 1.5rem;
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: 500;
     }
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      background: url('images/living room.jpg') center/cover no-repeat;
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 25px;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
     }
-    h2 {
-      color: #1e3a8a;
-      font-size: 1.6rem;
+    .hero-content {
+      position: relative;
+      z-index: 1;
     }
-    .apartment-img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin: 20px 0;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
     }
-    .apartment-img:hover {
-      transform: scale(1.02);
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
     }
     .btn {
       display: inline-block;
       background: #22c55e;
       color: white;
-      padding: 14px 24px;
-      border-radius: 10px;
+      padding: 14px 28px;
+      border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
       transition: all 0.3s;
-      margin-top: 10px;
     }
     .btn:hover {
       background: #16a34a;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+      transform: translateY(-3px);
     }
+
+    .features {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .features h2 {
+      color: #1e3a8a;
+      margin-bottom: 25px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 { color: #1e3a8a; }
+
+    footer {
+      background: #0f2160;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 50px;
+    }
+    footer p { margin: 0; font-size: 0.9rem; }
   </style>
 </head>
 <body>
   <header>
-    <h1>🏡 Rentle Apartments</h1>
+    <h1>🏘️ Rentle Apartments</h1>
     <nav>
       <a href="index.html">Home</a>
+      <a href="locations.html">Locations</a>
       <a href="payment.html">Booking Fee</a>
       <a href="upload.html">Upload Receipt</a>
     </nav>
   </header>
 
-  <div class="container">
-    <h2>2 Bedroom Apartment – New York</h2>
-    <p>Spacious <strong>2-bedroom apartment</strong> in a safe, family-friendly community. Just 5 minutes from the bus station and close to top-rated schools.</p>
-    <p>Perfect for families or professionals looking for comfort and convenience in New York City.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find Your Next Home with Ease</h2>
+      <p>Browse apartments across top cities and secure your visit instantly.</p>
+      <a href="locations.html" class="btn">Browse Locations</a>
+    </div>
+  </section>
 
-    <img src="images/living room.jpg" alt="Living Room" class="apartment-img">
+  <section class="features">
+    <h2>Why Rentle?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🏡 Verified Listings</h3>
+        <p>All apartments are verified and checked for quality and safety before listing.</p>
+      </div>
+      <div class="card">
+        <h3>💳 Easy Booking</h3>
+        <p>Secure your viewing with a simple $50 booking fee online.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Multiple Cities</h3>
+        <p>We offer apartments across various locations so you can find your perfect match.</p>
+      </div>
+    </div>
+  </section>
 
-    <p><a href="payment.html" class="btn">👉 Pay $50 Booking Fee to Secure Viewing</a></p>
-
-    <img src="images/bedroom 1.jpg" alt="Bedroom" class="apartment-img">
-    <img src="images/bathroom 2.jpg" alt="Bathroom" class="apartment-img">
-  </div>
+  <footer>
+    <p>© 2025 Rentle Apartments. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
