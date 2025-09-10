@@ -5,49 +5,110 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rentle Apartments - Locations</title>
 <style>
-  body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; margin:0; background:#f3f4f6; color:#374151; }
-  header { background: linear-gradient(135deg,#1e3a8a,#0f2160); color:white; padding:20px; text-align:center; }
-  .container { max-width:1000px; margin:40px auto; padding:20px; }
+  body { 
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
+    margin:0; 
+    background:#f3f4f6; 
+    color:#374151; 
+  }
+  header { 
+    background: linear-gradient(135deg,#1e3a8a,#0f2160); 
+    color:white; 
+    padding:20px; 
+    text-align:center; 
+    position: sticky; top: 0; z-index: 10;
+  }
+  header h1 { margin:0; font-size:1.8rem; }
+  .container { max-width:1200px; margin:40px auto; padding:20px; }
   .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
-  .card { background:white; padding:25px; border-radius:14px; box-shadow:0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s; }
+  .card { 
+    background:white; 
+    padding:20px; 
+    border-radius:14px; 
+    box-shadow:0 4px 10px rgba(0,0,0,0.08); 
+    transition: transform 0.3s; 
+    display:flex; flex-direction: column; align-items: center;
+  }
   .card:hover { transform: translateY(-5px); }
-  .card h3 { color:#1e3a8a; }
+  .card h3 { color:#1e3a8a; margin:10px 0; }
+  .card p { text-align:center; margin-bottom:15px; }
+  .card img { width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:12px; background:#e2e8f0; }
   .btn { display:inline-block; background:#22c55e; color:white; padding:12px 24px; border-radius:10px; text-decoration:none; font-weight:bold; transition:all 0.3s; }
-  .btn:hover { background:#16a34a; }
+  .btn:hover { background:#16a34a; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+  footer { background:#0f2160; color:white; text-align:center; padding:20px; margin-top:50px; }
+  footer p { margin:0; font-size:0.9rem; }
 </style>
 </head>
 <body>
+
 <header>
   <h1>🏘️ Rentle Apartments - Locations</h1>
 </header>
+
 <div class="container">
   <div class="cards">
+
+    <!-- Location 1 -->
     <div class="card">
-      <h3>308 Hooper St, New York</h3>
-      <p>2-bedroom apartment, near bus stops and schools.</p>
+      <img src="" alt="Apartment Image">
+      <h3>308 Hooper St, Brooklyn, NY</h3>
+      <p>2-bedroom apartment with parking, near bus stops and schools.</p>
       <a href="location-ny-hooper.html" class="btn">View Details</a>
     </div>
+
+    <!-- Location 2 -->
     <div class="card">
-      <h3>414 Lenox Ave, New York</h3>
-      <p>2-bedroom apartment, near shopping and transit.</p>
+      <img src="" alt="Apartment Image">
+      <h3>414 Lenox Ave, New York, NY</h3>
+      <p>2-bedroom apartment with parking, near shopping and transit.</p>
       <a href="location-ny-lenox.html" class="btn">View Details</a>
     </div>
+
+    <!-- Location 3 -->
     <div class="card">
-      <h3>649 E Industrial Park Dr, Manchester</h3>
-      <p>2-bedroom apartment with parking near bus and school.</p>
-      <a href="manchester-apartment.html" class="btn">View Details</a>
+      <img src="" alt="Apartment Image">
+      <h3>649 E Industrial Park Dr, Manchester, NH</h3>
+      <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+      <a href="location-nh-industrial.html" class="btn">View Details</a>
     </div>
+
+    <!-- Location 4 -->
     <div class="card">
-      <h3>74 S Main St, Rochester</h3>
-      <p>2-bedroom apartment with parking near bus and school.</p>
-      <a href="rochester-apartment.html" class="btn">View Details</a>
+      <img src="" alt="Apartment Image">
+      <h3>74 S Main St, Rochester, NH</h3>
+      <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+      <a href="location-nh-main.html" class="btn">View Details</a>
     </div>
+
+    <!-- Location 5 -->
     <div class="card">
-      <h3>631 Glenview Ave, Fort Pierce</h3>
-      <p>2-bedroom apartment with parking near bus and school.</p>
-      <a href="fort-pierce-apartment.html" class="btn">View Details</a>
+      <img src="" alt="Apartment Image">
+      <h3>631 Glenview Ave, Fort Pierce, FL</h3>
+      <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+      <a href="location-fl-glenview.html" class="btn">View Details</a>
     </div>
+
+    <!-- Additional Locations -->
+    <div class="card">
+      <img src="" alt="Apartment Image">
+      <h3>New Location 1</h3>
+      <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+      <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="" alt="Apartment Image">
+      <h3>New Location 2</h3>
+      <p>2-bedroom apartment with parking, near bus stops and schools.</p>
+      <a href="#" class="btn">View Details</a>
+    </div>
+
   </div>
 </div>
+
+<footer>
+  <p>© 2025 Rentle Apartments. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
