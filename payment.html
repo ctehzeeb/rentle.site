@@ -15,20 +15,38 @@
     .container {
       max-width: 700px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 25px;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     h2 {
       color: #1e3a8a;
+      margin-bottom: 10px;
     }
     .crypto-box {
       background: #f1f5f9;
       padding: 15px;
       border-radius: 8px;
-      margin: 15px 0;
-      font-size: 1.1em;
+      margin: 20px 0;
+      font-size: 1.05em;
+      border-left: 5px solid #1e3a8a;
+    }
+    .crypto-box strong {
+      color: #1e3a8a;
+    }
+    .wallet {
+      font-weight: bold;
+      color: #dc2626;
+      word-break: break-all;
+      margin-top: 8px;
+    }
+    .benefits {
+      background: #f9fafb;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
     }
     .btn {
       display: inline-block;
@@ -39,6 +57,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: background 0.2s;
+      margin-top: 20px;
     }
     .btn:hover {
       background: #0f2160;
@@ -48,34 +67,28 @@
 <body>
   <div class="container">
     <h2>💳 Secure Your Viewing</h2>
-    <p>Please pay a <strong>$50 Booking Fee</strong> to secure your apartment viewing.</p>
+    <p>Please pay a <strong>$50 Booking Fee</strong> to confirm your apartment viewing.</p>
 
     <div class="crypto-box">
       <p><strong>Payment Method:</strong> USDT (TRC20)</p>
       <p><strong>Wallet Address:</strong></p>
-      <p style="word-break: break-all; color: #dc2626;">
-TGu9X2hEdNDwXC7w8Czn5tLd7drtTiMCHE      </p>
+      <p class="wallet">TGu9X2hEdNDwXC7w8Czn5tLd7drtTiMCHE</p>
     </div>
 
-    <p>⚠️ After payment, please submit proof of payment to confirm your booking
-      💸 Secure Your Spot with Crypto Today
+    <div class="benefits">
+      <p>💸 <strong>Why Pay with Crypto?</strong></p>
+      <ul>
+        <li>✅ Instant transfer – no bank delays</li>
+        <li>✅ Secure & traceable – blockchain verified</li>
+        <li>✅ Global convenience – pay from anywhere</li>
+        <li>🎁 <strong>Bonus:</strong> Pay in crypto and get <u>$5 off your total</u></li>
+      </ul>
+    </div>
 
-Lock in your booking with just $50 in crypto – fast, safe, and verified on the blockchain.
+    <p>⚡ Availability is limited – bookings are confirmed on a first-come, first-served basis.  
+    After payment, please upload proof of transaction to finalize your booking.</p>
 
-✅ Instant transfer (no bank hassle, no waiting)
-✅ Protected & traceable (you always have proof of payment)
-✅ Bonus: Pay in crypto and get $5 off your total 🎁
-
-Accepted Coins: USDT (Tether), USDC, Bitcoin, Ethereum
-
-👉 Simply send your deposit to:
-
-
-⚡ First come, first served – secure your spot now!.</p>
-
-    <p><a href="proof.html" class="btn">📤 Upload Proof of Payment</a></p>
+    <a href="proof.html" class="btn">📤 Upload Proof of Payment</a>
   </div>
 </body>
 </html>
-
-
