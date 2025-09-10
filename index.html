@@ -5,48 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2 Bedroom Apartment – New York</title>
   <style>
+    /* Use a more modern, friendly font */
     body {
-      font-family: Arial, sans-serif;
-      background: #f9fafb;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f3f4f6;
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #374151;
+      line-height: 1.6;
     }
+
     header {
-      background: #1e3a8a;
+      background: linear-gradient(135deg, #1e3a8a, #0f2160);
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
     .container {
       max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 25px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
     }
-    h1 {
+
+    h2 {
+      color: #1e3a8a;
       margin-top: 0;
+      font-size: 1.6rem;
     }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
     .apartment-img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 12px;
       margin: 20px 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
+
+    .apartment-img:hover {
+      transform: scale(1.02);
+    }
+
     .btn {
       display: inline-block;
       background: #22c55e;
       color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 14px 24px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.2s;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      margin-top: 10px;
     }
+
     .btn:hover {
       background: #16a34a;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -57,14 +91,7 @@
 
   <div class="container">
     <h2>2 Bedroom Apartment – New York</h2>
-    <p>Spacious <strong>2-bedroom apartment</strong> in a safe community, only 5 minutes from the bus station and close to top-rated schools.</p>
-    <p>Perfect for families or professionals looking for comfort and convenience in New York City.</p>
-    <img src="images/living room.jpg" alt="Living Room" class="apartment-img">
-
-    <p><a href="payment.html" class="btn">👉 Pay $50 Booking Fee to Secure Viewing</a></p>
-    <img src="images/bedroom 1.jpg" alt="Bedroom" class="apartment-img">
-    <img src="images/bathroom 2.jpg" alt="Bathroom" class="apartment-img">
-  </div>
-</body>
-</html>
-
+    <p>Discover a spacious <strong>2-bedroom apartment</strong> in a safe, family-friendly community. Just 5 minutes from the bus station and close to top-rated schools.</p>
+    <p>Perfect for families or professionals looking for comfort and convenience in the heart of New York City.</p>
+    
+    <img src="images/living room.jpg" alt="Living Room" class="apartme
