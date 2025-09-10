@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Secure Your Booking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Your Viewing - Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1e3a8a;
+    }
+    .crypto-box {
+      background: #f1f5f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+    .btn {
+      display: inline-block;
+      background: #1e3a8a;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #0f2160;
+    }
+  </style>
 </head>
 <body>
-  <h2>Secure Your Viewing – $50 (USDT TRC20)</h2>
-  <p>Send exactly <strong>50.00 USDT (TRC20)</strong> to:</p>
-  <pre>TGu9X2hEdNDwXC7w8Czn5tLd7drtTiMCHE</pre>
+  <div class="container">
+    <h2>💳 Secure Your Viewing</h2>
+    <p>Please pay a <strong>$50 Booking Fee</strong> to secure your apartment viewing.</p>
 
-  <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=TYourTronAddressHere" alt="USDT QR Code">
+    <div class="crypto-box">
+      <p><strong>Payment Method:</strong> USDT (TRC20)</p>
+      <p><strong>Wallet Address:</strong></p>
+      <p style="word-break: break-all; color: #dc2626;">
+        https://forms.gle/Vywcnf5z8iFvAsoy9
+      </p>
+    </div>
 
-  <p>After payment, please <a href="proof.html">submit your proof here</a>.</p>
+    <p>⚠️ After payment, please submit proof of payment to confirm your booking.</p>
+
+    <p><a href="proof.html" class="btn">📤 Upload Proof of Payment</a></p>
+  </div>
 </body>
 </html>
+
+
